@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="img/logo.ico">
+    <script src="╙JQ╙/jquery-3.4.1.min.js"></script>
+    <title></MimHe></title>
+    <script>
+    $(document) .ready(function(){
+        $(".Menu > ul > li > a").hover(function(){
+             $(this).parent().find(".SubMenu").show();
+             $(this).css("background-color","#ffa323")
+        },function(){
+         $(this).parent().find(".SubMenu").hide();
+         $(this).css("background-color","#002f35")
+        });
+        $(".SubMenu").hover(function(){
+             $(this).show();
+             $(this).parent().find(".MyLink").css("background-color","#ffa323")
+        },function(){
+             $(this).hide();
+             $(this).parent().find(".MyLink").css("background-color","#002f35")
+        });
+        $(".SubMenu").hover(function(){
+             $(this).show();
+             $(this).parent().find(".MyLink").css("color","#2a343d")
+        },function(){
+             $(this).hide();
+             $(this).parent().find(".MyLink").css("color","#FF851B")
+        })
+
+     });
+    </script>
+
+</head>
+<body>
+
+    <div class="Box">
+        <div class="HeaderSite">
+            <div class="Logo">
+                <img src="img/logo.png" alt="Logo" width="200px">
+            </div>
+            <div class="Menu">
+                <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">اخبار</a></li>
+                    <li class="SubMenuFirst">
+                        <a class="MyLink" href="#">
+                            دسته بندی
+                            <img src="img/sort-down.png" width="12px" alt="Arrow">
+                        </a>
+                        <ul class="SubMenu">
+                            <li><a href="#">فتوشاپ</a></li>
+                            <li><a href="#">آیلوستریتور</a></li>
+                            <li><a href="#">طراحی وب</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="CLR"></div>
+        <div class="MainSite">
+            <div class="RightStn">
+                <div class="RightStnPost">
+                    <h3>
+                        مطالب جالب
+                    </h3>
+                    <div class="PostRight">
+                        <a href="#">
+                            <img src="img/1-pic.jpg" width="100%" alt="img">
+                        </a>
+                        <a href="#">
+                            طرح لایه باز فتوشاپ
+                        </a>
+                        <p>
+                            با کلیک رو عکس بالا میتوانید به صفحه مربوط به فایل های لایه باز فتوشاپ بروید.
+                        </p>
+                    </div>
+                    <div class="PostRight">
+                            <a href="#">
+                                <img src="img/1-pic.jpg" width="100%" alt="img">
+                            </a>
+                            <a href="#">
+                                طرح لایه باز فتوشاپ
+                            </a>
+                            <p>
+                                با کلیک رو عکس بالا میتوانید به صفحه مربوط به فایل های لایه باز فتوشاپ بروید.
+                            </p>
+                        </div>
+                        <div class="PostRight">
+                                <a href="#">
+                                    <img src="img/1-pic.jpg" width="100%" alt="img">
+                                </a>
+                                <a href="#">
+                                    طرح لایه باز فتوشاپ
+                                </a>
+                                <p>
+                                    با کلیک رو عکس بالا میتوانید به صفحه مربوط به فایل های لایه باز فتوشاپ بروید.
+                                </p>
+                            </div>
+        
+                    
+                </div>
+                
+            </div>
+            <div class="LeftStn">
+                <div class="LeftStnPost">
+                    <h3>
+                    < MimHe/ >
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
